@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="shortcut icon" href="./images/f2.png" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="start">
+ 
+  <!-- Modal -->
+  <div class="modal fade" id="Instructions" tabindex="-1" role="dialog" aria-labelledby="InstructionsTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="InstructionsTitle">Instructions</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ol type="number">
+              <li>One of Batter or Umpire flash at center place and a Outfielder will flash at random place.</li>
+              <li>You have to keep in mind that a batter is shown or a umpire and the position of Outfielder on screen. </li>
+              <li>You will have to choose right player and right position same as you saw in flash.</li>
+              <li>If both are correct you will gain a point otherwise game over.</li>
+              <li>As you are scoring more, speed of the flash will increase with each score.</li>
+          </ol>
+        </div>
+        <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-primary m-auto">Start Game</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        <!-- <img src="./images/start.svg" onclick="play()" class="start-icon vcenter" alt="start icon"> -->
+    </div>
+    <div class="my-container text-center">
+        <div class="row">
+            <div class="col-sm-4" onclick="routeCheck(this.id)" id="g1">
+                <img class="hidden-icon vcenter" src="./images/hidden.svg" alt="">
+            </div>
+            <div class="col-sm-4" onclick="routeCheck(this.id)" id="g2">
+                <img class="hidden-icon vcenter" src="./images/hidden.svg" alt="">
+            </div>
+            <div class="col-sm-4" onclick="routeCheck(this.id)" id="g3">
+               <img class="hidden-icon vcenter" src="./images/hidden.svg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4" onclick="routeCheck(this.id)" id="g4">
+                <img class="hidden-icon vcenter" src="./images/hidden.svg" alt="">
+            </div>
+            <div class="col-sm-4" id="g-car">
+                <img src="./images/f1.png" id="car1" onclick="checkCar(this.id)" alt="">
+                <img src="./images/f2.png" id="car2" onclick="checkCar(this.id)" alt="">
+            </div>
+            <div class="col-sm-4" onclick="routeCheck(this.id)" id="g5">
+                <img class="hidden-icon vcenter" src="./images/hidden.svg" alt="">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4" onclick="routeCheck(this.id)" id="g6">
+                <img class="hidden-icon vcenter" src="./images/hidden.svg" alt="">
+            </div>
+            <div class="col-sm-4" onclick="routeCheck(this.id)" id="g7">
+                <img class="hidden-icon vcenter" src="./images/hidden.svg" alt="">
+            </div>
+            <div class="col-sm-4" onclick="routeCheck(this.id)" id="g8">
+                <img class="hidden-icon vcenter" src="./images/hidden.svg" alt="">
+            </div>
+        </div>
+    </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="message"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <h1 id="score"></h1>
+            <div class="mt-4" id="rightCar"></div>
+            <div class="mt-4" id="rightRoute"></div>
+            <div class="mt-4" id="wrongCar"></div>
+            <div class="mt-4" id="wrongRoute"></div>
+            <div class="mt-4" id="totalTime"></div>
+        </div>
+        <div class="modal-footer text-center">
+          <button type="button" data-dismiss="modal" aria-label="Close" class="btn btn-primary">Play Again</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="jquery.min.js"></script>
+<script src="popper.js"></script>
+<script src="bootstrap.min.js"></script>
+<script src="logic.js"></script>
+</body>
+</html>

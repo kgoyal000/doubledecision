@@ -1,0 +1,101 @@
+body, html {
+    height: 100%;
+  }
+.my-container{
+   background-image: url('./images/bbc.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: #000;
+   height: 100%;
+   width: 100%;
+}
+.img{
+    width: 50px;
+    height: 30px;
+}
+
+.col-sm-4{
+    height: 100%;
+}
+
+.row{
+    height: 33.3%;
+    margin: 0;
+}
+
+.vcenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#g-car{
+    display: flex;
+    justify-content: space-around;
+}
+
+#car1,#car2{
+    width: 40%;
+    height: auto;
+    display: none;
+    transition: 1s ease-in-out display;
+}
+
+.route-icon {
+    width: 30%;
+    height: auto;
+}
+
+img.hidden-icon{
+    width: 35%;
+    transition: 1s ease-in-out display;
+    display: none;
+    z-index: 2222;
+}
+
+.start{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1111111111;
+}
+
+.start-icon{
+    width: 30%;
+    box-shadow: 0px 0px 20px #323232;
+    border-radius: 50%;
+}
+
+
+.start-icon:active {
+  box-shadow: 0px 10px 50px #323232;
+  transform: scale(0.75) translate(-65%,-65%);
+}
+
+.nohover:hover {
+    background-color: white !important;
+    opacity: .85;
+}
+
+#g-car:hover{
+    background-color:rgba(0, 0, 0, 0) !important;
+}
+
+#car1:hover,#car2:hover,#car1:active,#car2:active{
+    cursor: pointer;
+    border: 1px solid #787979;
+}
+ol>li{
+    line-height: 2.5;
+}
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 65%;
+    margin: 1.75rem auto;
+    }
+}
