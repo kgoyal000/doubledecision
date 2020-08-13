@@ -72,6 +72,7 @@ function hideHidden(){
 
 function checkCar(id){
     $('img.hidden-icon,.route-icon').css('display','block')
+    $('.route-icon').css('display','none')
     $('.col-4').addClass('nohover')
     $('#car2').css('display','none')
     $('#car1').css('display','none')

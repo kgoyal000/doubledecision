@@ -49,7 +49,7 @@ body, html {
 }
 
 img.hidden-icon{
-    width: 30%;
+    width: 20%;
     transition: 1s ease-in-out display;
     display: none;
     z-index: 2222;
@@ -78,7 +78,7 @@ img.hidden-icon{
 
 .nohover:hover {
     background-color: white !important;
-    opacity: .85;
+    opacity: .7;
 }
 
 #g-car:hover{
