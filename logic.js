@@ -67,12 +67,12 @@ function hideHidden(){
         $('#car2').css('display','none')
         $('#car1').css('display','none')
         $('img.hidden-icon').css('display','none')
-        $('.col-sm-4').removeClass('nohover')
+        $('.col-4').removeClass('nohover')
 }
 
 function checkCar(id){
     $('img.hidden-icon,.route-icon').css('display','block')
-    $('.col-sm-4').addClass('nohover')
+    $('.col-4').addClass('nohover')
     $('#car2').css('display','none')
     $('#car1').css('display','none')
     if(randCar == 1 && id == 'car1'){

@@ -15,7 +15,7 @@ body, html {
     height: 30px;
 }
 
-.col-sm-4{
+.col-4{
     height: 100%;
 }
 
@@ -37,19 +37,19 @@ body, html {
 }
 
 #car1,#car2{
-    width: 40%;
-    height: auto;
+    width: 25%;
+    height: 65%;
     display: none;
     transition: 1s ease-in-out display;
 }
 
 .route-icon {
-    width: 30%;
+    width: 25%;
     height: auto;
 }
 
 img.hidden-icon{
-    width: 35%;
+    width: 30%;
     transition: 1s ease-in-out display;
     display: none;
     z-index: 2222;
@@ -99,3 +99,23 @@ ol>li{
     margin: 1.75rem auto;
     }
 }
+
+@media (max-width: 620px){
+    #car1,#car2{
+        width: 85%;
+        height: 55%;
+    }
+    
+    .route-icon {
+        width: 50%;
+        height: auto;
+    }
+    
+    img.hidden-icon{
+        width: 60%;
+        transition: 1s ease-in-out display;
+        display: none;
+        z-index: 2222;
+    }
+    
+    }
