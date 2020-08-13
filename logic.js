@@ -132,7 +132,7 @@ function checkScore(){
 function nextLevel(){
     randomRoute();
     showRandomCar()
-    showHiddenTimeout(1500-score*50)
+    showHiddenTimeout(1500-score*75)
   /*  if(score == 5){
         $('.my-container').css('background-image','url("./images/2.jpg")')
     }
