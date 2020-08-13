@@ -54,6 +54,8 @@ function showRandomCar(){
 
 function showHidden(){
     $('.my-container').css('pointer-events','all')
+    $('.col-4').css('pointer-events','none')
+    $('#g-car').css('pointer-events','all')
     if(randCar == 1){
         $('#car2').css('display','block')
     }else{
@@ -72,6 +74,8 @@ function hideHidden(){
 
 function checkCar(id){
     $('img.hidden-icon,.route-icon').css('display','block')
+    $('.col-4').css('pointer-events','all')
+    $('#g-car').css('pointer-events','none')
     $('.route-icon').css('display','none')
     $('.col-4').addClass('nohover')
     $('#car2').css('display','none')
